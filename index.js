@@ -23,7 +23,7 @@ app.use((req,res)=>{
     res.status(404).json({message : "end point does not exist"})
 })
 
-const hostname = '127.0.0.1'; // Localhost 
+const hostname = '0.0.0.0'; // Localhost 
 const port = 3000;
 
 // Start the server

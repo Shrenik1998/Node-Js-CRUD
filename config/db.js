@@ -1,6 +1,7 @@
 //mongoose is orm tool for mongodb
 const mongoose = require('mongoose');
-const uri = "mongodb://127.0.0.1:27017/person";
+// const uri = "mongodb://127.0.0.1:27017/person";
+const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/person";
 
 
 //connection with mongodb
